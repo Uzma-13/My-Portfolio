@@ -1,89 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <!-- Header Section -->
+
     <header>
+
         <h1>My Portfolio</h1>
+
+        <!-- Cute Animation -->
+
+        <div class="cute-animation">✨</div>
+
         <p>Welcome to my personal portfolio website</p>
+
         <hr>
+
+        <!-- Navigation / Bookmark Links -->
+
+        <a href="#about">About Me</a><br><br>
+
+        <a href="#education">Education</a><br><br>
+
+        <a href="#skills">Skills</a><br><br>
+
+        <a href="#projects">Projects</a><br><br>
+
+        <a href="#contact">Contact Me</a><br><br>
+
     </header>
 
+    <hr>
+
     <!-- About Me Section -->
-    <section>
+
+    <section id="about">
+
         <h2>About Me</h2>
+
         <p>
-            Hello! My name is Madar Uzma Sadaf. 
-            I am a student and I am interested in web development, technology, 
-            and learning new skills.
+            Hello! My name is Madar Uzma Sadaf.
+            I am currently pursuing my degree at
+            Islamiah Women’s Arts and Science College Autonomous.
         </p>
+
+        <p>
+            Currently, I am doing an internship at VYTCDC
+            in the field of UI/UX Designing,
+            where I am learning about user interface design,
+            user experience principles,
+            wireframing, and modern design concepts.
+        </p>
+
+        <p>
+            I enjoy creating simple and user-friendly designs
+            and continuously improving my technical and creative abilities
+            through practical learning and projects.
+        </p>
+
+        <p>
+            Apart from academics,
+            I am interested in exploring new technologies,
+            improving my communication skills,
+            and gaining real-world industry experience.
+        </p>
+
+        <p>
+            My goal is to build a successful career
+            in the IT industry and become a skilled professional
+            who contributes with creativity,
+            innovation, and dedication.
+        </p>
+
     </section>
 
     <hr>
 
     <!-- Education Section -->
-    <section>
+
+    <section id="education">
+
         <h2>Education</h2>
-        <p>College Name: Islamiah Women's Arts and Science College</p>
-        <p>Course:BCA</p>
-        <p>Year:2nd year completed</p>
+
+        <p>
+            College Name:
+            Islamiah Women's Arts and Science College
+        </p>
+
+        <p>Course: BCA</p>
+
+        <p>Year: 2nd year completed</p>
+
     </section>
 
     <hr>
 
     <!-- Skills Section -->
-    <section>
+
+    <section id="skills">
+
         <h2>Skills</h2>
 
         <ul>
+
             <li>HTML</li>
+
             <li>CSS</li>
+
             <li>JavaScript</li>
+
+            <li>Git & GitHub</li>
+
+            <li>UI/UX Designing</li>
+
             <li>Communication Skills</li>
+
         </ul>
+
     </section>
 
     <hr>
 
     <!-- Projects Section -->
-    <section>
+
+    <section id="projects">
+
         <h2>Projects</h2>
 
-        <h3>Portfolio Website</h3>
-        <p>
-            Created a simple personal portfolio website using HTML.
-        </p>
+        <table border="1" cellpadding="10">
 
-        <h3>Student Management Project</h3>
-        <p>
-            A basic project for managing student details.
-        </p>
+            <tr>
+
+                <th>Project Name</th>
+
+                <th>Description</th>
+
+                <th>Project Demo</th>
+
+            </tr>
+
+            <!-- Project 1 -->
+
+            <tr>
+
+                <td>Portfolio Website</td>
+
+                <td>
+                    Created a personal portfolio website using HTML,
+                    VS Code, GitHub, and GitHub Pages.
+                </td>
+
+                <td>
+
+                    <video width="300" controls>
+
+                        <source src="videos/videos.mp4" type="video/mp4">
+
+                    </video>
+
+                </td>
+
+            </tr>
+
+            <!-- Project 2 -->
+
+            <tr>
+
+                <td>Event Registration Form</td>
+
+                <td>
+                    Developed a simple event registration webpage
+                    using HTML form elements.
+                </td>
+
+                <td>
+
+                   <a href="event.html" target="_blank">
+
+    <button>Open Event Registration Form</button>
+
+</a>
+
+                </td>
+
+            </tr>
+
+            <!-- Project 3 -->
+
+            <tr>
+
+                <td>Multimedia Audio Demo</td>
+
+                <td>
+                    Added audio multimedia using HTML audio tag.
+                </td>
+
+                <td>
+
+                    <audio controls>
+
+                        <source src="audio/audio-demo.mpeg" type="audio/mpeg">
+
+                    </audio>
+
+                </td>
+
+            </tr>
+
+        </table>
+
     </section>
 
     <hr>
 
-    
     <!-- Contact Section -->
-    <section>
+
+    <section id="contact">
+
         <h2>Contact Me</h2>
 
         <p>Email: madaruzmasadaf@gmail.com</p>
+
         <p>Phone: 7904348493</p>
+
         <p>Location: Vaniyambadi</p>
+
+        <!-- Google Map -->
+
+        <h3>📍 My Location</h3>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31140.458155930082!2d78.60144060029677!3d12.677007957140958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bada9a399f60b0d%3A0x8ace6dc0bad6c5cc!2sVaniyambadi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1780295422648!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+
+        </iframe>
+
     </section>
 
     <hr>
 
     <!-- Footer Section -->
+
     <footer>
+
         <p>Thank you for visiting my portfolio!</p>
+
     </footer>
 
 </body>
+
 </html>

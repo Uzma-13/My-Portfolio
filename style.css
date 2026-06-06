@@ -1,0 +1,215 @@
+body {
+    background-color: #F0D9E4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #16131F;
+}
+
+/* Header */
+header {
+    background-color: #C1A0AC;
+    color: #16131F;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navigation */
+nav {
+    background-color: #806C79;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #16131F;
+}
+
+/* General Section Style */
+section {
+    background-color: #C1A0AC;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(22, 19, 31, 0.12);
+}
+
+/* Section Headings */
+h2 {
+    color: #16131F;
+    border-bottom: 2px solid #4A3F4B;
+    padding-bottom: 8px;
+}
+
+/* General Paragraph */
+p {
+    font-size: 18px;
+    color: #16131F;
+    line-height: 1.7;
+}
+
+/* About Me Section */
+.about-me {
+    background-color: #806C79;
+    border-left: 6px solid #16131F;
+}
+
+/* About Me Paragraph */
+.about-me p {
+    color: #F0D9E4;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Skills List */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    color: #4A3F4B;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F0D9E4;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #4A3F4B;
+    color: #F0D9E4;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #806C79;
+    padding: 10px;
+    color: #16131F;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #16131F;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+footer p {
+
+    color: white;
+
+}
+/* Section Animation */
+
+section {
+    transition: 0.5s;
+}
+
+/* Desktop Hover */
+
+section:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* Mobile Touch */
+
+section:active {
+    transform: translateY(-10px) scale(1.02);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+nav a:active {
+    color: yellow;
+    transform: scale(1.1);
+}
+/* Cute Moving Animation */
+
+.cute-animation {
+    font-size: 40px;
+    position: relative;
+    animation: moveCharacter 4s infinite alternate;
+}
+
+/* Animation */
+
+@keyframes moveCharacter {
+
+    0% {
+        left: 0px;
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        left: 300px;
+        transform: rotateY(180deg);
+    }
+}
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    body {
+
+        font-size: 14px;
+
+    }
+
+    table {
+
+        width: 100%;
+
+    }
+
+    img, video {
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+    nav a {
+
+        display: block;
+
+        margin: 10px 0;
+
+    }
+
+}

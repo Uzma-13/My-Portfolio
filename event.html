@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Event Registration</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="event.css">
+</head>
+
+<body>
+
+<h1>Event Registration Form</h1>
+
+<div id="successMessage" class="success"></div>
+
+<form id="registrationForm">
+
+<label>Name</label>
+<input type="text" id="name">
+<span class="error" id="nameError"></span>
+
+<label>Email</label>
+<input type="text" id="email">
+<span class="error" id="emailError"></span>
+
+<label>Phone</label>
+<input type="text" id="phone">
+<span class="error" id="phoneError"></span>
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+<span class="error" id="dobError"></span>
+
+<label>Gender</label>
+<select id="gender">
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+<span class="error" id="genderError"></span>
+
+<label>Event</label>
+<select id="event">
+<option value="">Select Event</option>
+<option>Hackathon</option>
+<option>Workshop</option>
+<option>Seminar</option>
+</select>
+<span class="error" id="eventError"></span>
+
+<label>Mode</label>
+<input type="radio" name="mode" value="Online"> Online
+<input type="radio" name="mode" value="Offline"> Offline
+<span class="error" id="modeError"></span>
+
+<label>College / Company</label>
+<input type="text" id="college">
+<span class="error" id="collegeError"></span>
+
+<br><br>
+
+<label>
+<input type="checkbox" id="confirm">
+I confirm that the above details are correct
+</label>
+<span class="error" id="confirmError"></span>
+
+<br><br>
+
+<button type="submit">Register</button>
+
+</form>
+
+<h2>Registered Participants</h2>
+
+<table border="1">
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Event</th>
+<th>Mode</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="participantsTable">
+</tbody>
+</table>
+
+<script src="script.js"></script>
+<script src="event.js"></script>
+
+</body>
+</html>
